@@ -33,3 +33,9 @@ module.exports = {
   passionFruit: require('./passion-fruit.js')
 }
 ```
+
+
+* [Printing colorful text in terminal when run node js script](https://coderwall.com/p/yphywg/printing-colorful-text-in-terminal-when-run-node-js-script)
+* [How to get colors on the command line](https://docs.nodejitsu.com/articles/command-line/how-to-get-colors-on-the-command-line)
+* [node.js require all files in a folder?](http://stackoverflow.com/questions/5364928/node-js-require-all-files-in-a-folder)
+* [Converting any string into camel case](http://stackoverflow.com/questions/2970525/converting-any-string-into-camel-case)

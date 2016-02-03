@@ -17,6 +17,7 @@ In this lab, you'll learn how to proxy folders or in other words how to create a
 3. Export the imported file as an object—the `module.exports = {...} pattern—with filenames as properties (see extra info if this is too confusing)
 4. Create `main.js` in the repository folder and import the `color-logs` folder
 5. Print two lines: "Access granted" with green color and "Permission denied" with red.
+6. Bonus: refactor `index.js` to process unlimited number of file from the `color-logs` folder with `fs.
 
 ### Extra Info
 

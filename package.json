@@ -1,0 +1,22 @@
+{
+  "name": "node-modules-folder-lab",
+  "version": "1.0.0",
+  "description": "Importing Folders (Proxy for Modules)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:learn-co-curriculum/node-modules-folder-lab.git"
+  },
+  "author": "Azat Mardan",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:learn-co-curriculum/node-modules-folder-lab.git/issues"
+  },
+  "homepage": "git@github.com:learn-co-curriculum/node-modules-folder-lab.git/#readme",
+  "devDependencies": {
+    "tape": "4.3.0"
+  }
+}

@@ -29,7 +29,7 @@ var normalizedPath = require('path').join(__dirname)
 var colorLogs = {}
 require('fs').readdirSync(normalizedPath).forEach(function(file) {
   // Skip this file
-  if (file === __filename) return false
+  if (file === __filename || !file.endsWith('.js')) return false
   // Convert to valid JS/Node name
   var keyName = toCamelCase(path.basename(file, '.js'))
   // Import from a file
@@ -40,7 +40,7 @@ module.exports = colorLogs
 
 
 // More font and background colors
-
+//
 // Reset = "\x1b[0m"
 // Bright = "\x1b[1m"
 // Dim = "\x1b[2m"

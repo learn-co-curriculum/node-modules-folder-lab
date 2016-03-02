@@ -14,12 +14,12 @@ Imagine you're working on a server logger. You must implement a series of module
 
 ## Instructions
 
-1. Create a proxy file `index.js` in the `color-logs` folder.
-2. Import all the JS files in the `color-logs` folder in the `index.js` (except `index.js` obviously)
+1. Create a proxy file `index.js` in the `color-logs` directory.
+2. Import all the other JS files in the `color-logs` directory in the `index.js` (except `index.js` obviously)
 3. Export the imported file as an object. Follow the  `module.exports = {...}` pattern with filenames as values of properties (see extra info if this is too confusing)
-4. Create `main.js` in the repository folder and import the `color-logs` folder.
-5. Print two lines: "Access granted" with green color and "Permission denied" with red.
-6. Bonus: refactor `index.js` to process an unlimited number of files from the `color-logs` folder with `fs` **withou** using any extra npm modules like `require-dir`. You can use `readdirSync()` to read the list of files in the folder. Note: Don't forget to check that the files have `.js` extension and remember to convert any weird names (e.g., `deep-blue.js`) to proper JavaScript/Node names with camelCase (`deepBlue`).
+4. Create `main.js` in the root directory of this project and import the `color-logs` folder.
+5. Print two lines: "Access granted" in the green color and "Permission denied" in red.
+6. Bonus: refactor `index.js` to process an unlimited number of files from the `color-logs` folder with `fs` **without** using any extra npm modules like `require-dir`. You can use `readdirSync()` to read the list of files in the folder. Note: Don't forget to check that the files have `.js` extension and remember to convert any weird names (e.g., `deep-blue.js`) to proper JavaScript/Node names with camelCase (`deepBlue`).
 
 ### Extra Info
 
@@ -36,7 +36,7 @@ module.exports = {
 }
 ```
 
-The way colors work, they use special character codes and the reset code (always `\x1b[0m'`) to clear the colors. For example, this line puts text parameter `text`, which is `%s` in the first string, between two special codes:
+Let's talk about how `green.js`, `red.js` and `yellow.js` work. All three files use special character codes to set the color, and a reset code (always `\x1b[0m'`) to clear the colors. For example, this line puts text parameter `text`, which is `%s` in the first string, between two special codes:
 
 ```js
 console.log('\x1b[32m%s\x1b[0m', text)

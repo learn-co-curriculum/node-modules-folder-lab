@@ -8,11 +8,9 @@
 
 ## Introduction
 
-Code organization is important. If you want to really master Node and impress you co-workers, you need to know how to import folder. This powerful pattern sometimes called proxy for modules, or plugins pattern. It will allow you to import just one thing, but get many many modules which are in that folder.
+Code organization is important. If you want to really master Node and impress you co-workers, you need to know how to import folders. This powerful pattern is sometimes called a proxy for modules. This plugin pattern allows you to write a line of code to import a directory, which also recursively imports everything inside that directory. 
 
-Imagine you're working server logger. You must implement series of modules which display logs in different colors. (It can be later used in a CLI game development too!).
-
-In this lab, you'll learn how to proxy folders or in other words how to create an abstraction layer which will allow you to group files using the Node feature of importing folders.
+Imagine you're working on a server logger. You must implement a series of modules which display your app logs in different colors. (It can be later used in a CLI game development too!).
 
 ## Instructions
 
